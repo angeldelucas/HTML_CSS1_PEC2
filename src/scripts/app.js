@@ -63,12 +63,13 @@ function menu(event, showHide) {
         menuBtn.textContent = "cerrar menú";
         headerMenu.style.height = "60dvh";
         headerMenu.style.overflowX = "hidden";
-        headerMenu.style.overflowY = "auto";
+        headerMenu.style.overflowY = "hidden";
     }
     else if (showHide == 'hide' || showHide == undefined) {
         menuOptions.className = "menu__options-menu hide";
         header.style.height = "auto";
-        body.style.overflow = "auto";
+        body.style.overflowX = "hidden";
+        body.style.overflowY = "auto";
         menuBtn.textContent = "menú";
         headerMenu.style.height = "inherit"; footer.style.visibility = "hidden";
         footer.style.bottom = 0;
@@ -195,7 +196,6 @@ function nextPresentationMenuAutomatic(currentElto) {
 
 // Temporizadores que controlan el cambio de elemento en los menús 
 // automáticos en las vistas de presentación y portada
-// setInterval(nextPresentationMenuAutomatic, 5000);
 setInterval(function () {
     nextPresentationMenuAutomatic(currentOption);
     if (currentOption < 7) {

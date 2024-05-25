@@ -7,12 +7,11 @@
     align-items: center;
 
     &__header {
-        position: relative;
-        padding: 10%;
         width: 100%;
         height: 70dvh;
-
+        padding: 10%;
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
         background: url("../assets/images/presentacion_background.jpg");
@@ -21,22 +20,22 @@
 
         .header {
             &__background {
+                width: 100%;
+                height: 100%;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 200%;
-                height: 100%;
                 background: url("../assets/images/cloud-overlay.png");
-                animation: clouds 40s linear infinite;
+                animation: none;
                 filter: brightness(150%);
             }
 
             &__background-light {
+                width: 100%;
+                height: 100%;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: 100%;
                 z-index: 5;
                 animation-name: light-background;
                 animation-duration: 15s;
@@ -55,10 +54,10 @@
             }
 
             &__img {
-                position: absolute;
                 width: 100%;
                 height: 100%;
                 border: 1px solid white;
+                position: absolute;
             }
         }
     }
@@ -213,9 +212,13 @@
         &__header {
 
             .header {
+                &__background {
+                    width: 200%;
+                    animation: clouds 40s linear infinite;
+                }
 
                 &__logo {
-                    scale: 2.5;
+                    scale: 2.5;                    
                 }
             }
         }

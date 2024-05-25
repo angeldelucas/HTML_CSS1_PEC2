@@ -27,12 +27,12 @@
             }
 
             &__singer-card {
-                visibility: hidden;
-                opacity: 0;
-                position: absolute;
                 width: 100%;
                 height: 70vh;
+                position: absolute;
                 left: -150%;
+                visibility: hidden;
+                opacity: 0;
                 transition: opacity 800ms ease-in-out;
                 z-index: 20;
 
@@ -250,7 +250,6 @@
             }
 
             #one {
-
                 clip-path: polygon(0% 0%,
                         /*1*/
                         30% 0%,
@@ -506,13 +505,11 @@
 }
 
 .portada__presentation-image:has(.presentation-image__shape:hover)>.presentation-image__shape {
-
     filter: brightness(140%);
     cursor: pointer;
 }
 
 .portada__presentation-image:has(.presentation-image__shape:hover)>.presentation-image__shape:not(:hover) {
-
     opacity: 0.8;
     filter: grayscale(50%);
     filter: brightness(50%);
