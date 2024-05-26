@@ -248,7 +248,7 @@ function openSingerCard(event) {
     let singerCardElto = document.getElementById(singerCardId);
 
     if (document.querySelector(".header").clientWidth > 768) {
-        window.scrollTo(0, document.querySelector(".header").clientHeight + presentationContainer.offsetTop);
+        window.scrollTo(0, document.querySelector(".header").clientHeight);
     }
 
     singerCardEltos.forEach(singerCard => {
