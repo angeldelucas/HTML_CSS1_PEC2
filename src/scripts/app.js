@@ -351,7 +351,7 @@ singerCardEltos.forEach(singerCard => {
 
 
 if (document.querySelector(".header").clientWidth > 768) {
-    window.scrollTo(0, document.querySelector(".header").clientHeight + presentationContainer.offsetTop);
+    window.scrollTo(0, document.querySelector(".header").clientHeight);
 }
 // Condicionales para el control del footer. El footer debe mostrarse en la parte baja
 // de la pantalla cuando la vista seleccionada no es la portada y además estamos en pantallas
